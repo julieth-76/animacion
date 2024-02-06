@@ -89,11 +89,11 @@ body{
     100% {left: 100px; width: 20px; height: 20px;}
 }
 @keyframes mario {
-    0%   {top: 0px; left: 300px; background: red; width: 0px; height: 0px}
-    25%  {top: 200px; left: 100px; background: blue; width: 0px; height: 0px}
-    50%  {top: 10px; left: 100px; background: yellow; width: 0px; height: 100x}
-    75%  {top: 500px; left: 0px; background: green; width: 0px; height: 0px}
-    100% {top: 200px; left: 0px; background: red; width: 0px; height: 0px; }
+    0%   {top: 0%; left: 30rem; background: red;}
+    25%  {top: 20px; left: 20%; background: blue;}
+    50%  {top: 10%; left: 30%; background: yellow; height: 20%;}
+    75%  {top: 500px; left: 20px; background: green;}
+    100% {top: 40%; left: 20px;background: red;}
   }
 
   h1 {
@@ -108,5 +108,13 @@ body{
        
     }
     
+}
+
+@media screen and (min-width: 200px) and (man-width: 500px) {
+    
+    @font-face {
+        font-family: mario;
+        src: url();
+    }
 }
 
