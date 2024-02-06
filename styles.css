@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: rgb(178, 255,255);
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: mario;
+    src: url(tipografias/SuperMario256.ttf);
+}
+
+.negro {
+    color: black;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.rojo {
+    color:red;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color:red;
+}
+
+.azul {
+    color:cornflowerblue
+}
+
+.capa0 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+
+.capa1 {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    z-index: 100;
+    animation-name: 23%;
+    height: 100PX;
+}
+
+.capa2 {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    z-index: 200;
+    animation-name: 22%;
+}
+
+.capa3 {
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    width: calc(50% - 150px);
+    z-index: 200;
+}
+
+.anima1{
+    position: relative;
+    animation: tortuga 5s infinite;
+    height: 200px;
+}
+
+@keyframes tortuga {
+    0%   {top: 300px;}
+    25%  {top: 400px;}
+    75%  {top: 50px; ;}
+    100% {top: 100px;width: 20px; height: 20px;}
+  }
+ 
+  
+  
+
+.anima2{
+    position: relative;
+    animation: mario 15s infinite;
+    height: 200px;
+}
+
+@keyframes mario {
+    0%   {left: 100px;}
+    25%  {left: 600px;}
+    75%  {left: 50px; }
+    100% {left: 100px; width: 20px; height: 20px;}
+}
+@keyframes mario {
+    0%   {top: 0px; left: 300px; background: red; width: 0px; height: 0px}
+    25%  {top: 200px; left: 100px; background: blue; width: 0px; height: 0px}
+    50%  {top: 10px; left: 100px; background: yellow; width: 0px; height: 100x}
+    75%  {top: 500px; left: 0px; background: green; width: 0px; height: 0px}
+    100% {top: 200px; left: 0px; background: red; width: 0px; height: 0px; }
+  }
+
+  h1 {
+    font-family: mario;
+}
+
+@media screen and (min-width: 200px) and (man-width: 500px){
+    body{
+        
+       background-color: brown;
+       
+       
+    }
+    
+}
+
