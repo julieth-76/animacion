@@ -1,10 +1,18 @@
 *{
     box-sizing: border-box;
 }
-body{
+body {
     background: rgb(178, 255,255);
     padding: 0;
     margin: 0;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+    body{
+    
+       background: brown;
+    }
+    
 }
 
 @font-face {
@@ -55,7 +63,7 @@ body{
 .capa3 {
     position: absolute;
     left: 100px;
-    top: 150px;
+    top: 500px;
     width: calc(50% - 150px);
     z-index: 200;
 }
@@ -73,48 +81,20 @@ body{
     100% {top: 100px;width: 20px; height: 20px;}
   }
  
-  
-  
-
-.anima2{
+.anima2 {
     position: relative;
-    animation: mario 15s infinite;
+    max-width: 50vh;
+    animation: mario 13s infinite;
     height: 200px;
 }
 
-@keyframes mario {
-    0%   {left: 100px;}
-    25%  {left: 600px;}
-    75%  {left: 50px; }
-    100% {left: 100px; width: 20px; height: 20px;}
-}
-@keyframes mario {
-    0%   {top: 0%; left: 30rem; background: red;}
-    25%  {top: 20px; left: 20%; background: blue;}
-    50%  {top: 10%; left: 30%; background: yellow; height: 20%;}
-    75%  {top: 500px; left: 20px; background: green;}
-    100% {top: 40%; left: 20px;background: red;}
+@keyframes tortuga {
+    0%   {top: 300px; left: auto;}
+    25%  {top: 400px;}
+    75%  {top: 50px; ;}
+    100% {top: 100px;width: 20px; height: 20px;}
   }
 
-  h1 {
+h1 {
     font-family: mario;
 }
-
-@media screen and (min-width: 200px) and (man-width: 500px){
-    body{
-        
-       background-color: brown;
-       
-       
-    }
-    
-}
-
-@media screen and (min-width: 200px) and (man-width: 500px) {
-    
-    @font-face {
-        font-family: mario;
-        src: url();
-    }
-}
-
